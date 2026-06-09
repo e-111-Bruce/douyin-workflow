@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+.card {
+  width: 400px;
+  min-height: 720px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 44px 36px;
+  display: flex;
+  flex-direction: column;
+  color: #1a1a2e;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  border: 1px solid #f0f0f5;
+}
+.big-number {
+  font-size: 72px;
+  font-weight: 800;
+  color: #667eea;
+  opacity: 0.15;
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  line-height: 1;
+}
+.emoji-badge { font-size: 48px; margin-bottom: 16px; }
+.tag {
+  display: inline-block;
+  background: #f0f0ff;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+.title { font-size: 28px; font-weight: 700; line-height: 1.3; margin-bottom: 8px; color: #1a1a2e; }
+.sub { font-size: 16px; color: #888; line-height: 1.6; margin-bottom: 24px; }
+.content-box {
+  background: #f8f9ff;
+  border-left: 4px solid #667eea;
+  border-radius: 0 12px 12px 0;
+  padding: 18px 20px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 16px;
+}
+.analogy-box {
+  background: #fff8e6;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #8a6d2b;
+  margin-top: 8px;
+}
+.steps { margin-top: 16px; }
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.step-num {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  background: #667eea;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+.step-text { font-size: 14px; color: #555; line-height: 1.6; padding-top: 3px; }
+.bottom-tag { margin-top: auto; font-size: 12px; color: #bbb; text-align: center; padding-top: 20px; letter-spacing: 1px; }
+.quote {
+  font-size: 18px;
+  font-weight: 600;
+  color: #667eea;
+  text-align: center;
+  padding: 20px 0;
+  line-height: 1.5;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="big-number">2</div>
+  <div class="emoji-badge">📮</div>
+  <span class="tag">文科生也想学AI · Day 1</span>
+  <div class="title">API 就是<br>程序之间的快递员</div>
+  <div class="sub">英文叫 API，别被名字吓到</div>
+  <div class="content-box">
+    你点外卖，不需要去后厨炒菜。<br>
+    你只需要下单（发请求），<br>
+    系统（快递员）帮你送过去，<br>
+    再把做好的菜送回给你。
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text"><strong>你</strong> → 发请求<br>"帮我查厦门的天气"</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text"><strong>API</strong> → 送到服务器<br>快递员跑腿中</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text"><strong>服务器</strong> → 返回结果<br>"厦门现在21.4°C"</div>
+    </div>
+  </div>
+  <div class="quote">
+    「AP I= 程序之间的快递员」
+  </div>
+  <div class="bottom-tag">#AI入门 #文科生学AI</div>
+</div>
+</body>
+</html>
